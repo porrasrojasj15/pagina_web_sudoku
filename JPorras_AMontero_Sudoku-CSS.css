@@ -69,3 +69,14 @@ a:visited{
   font-family: Arial, sans-serif;
   color: purple;
 }
+
+button.iniciar {
+    background-color: #25435d;
+    border-style: double;
+    border-radius: 15px;
+    color: #ffffff;
+    padding: 10px 15px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+}
