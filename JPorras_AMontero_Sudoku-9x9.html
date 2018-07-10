@@ -14,6 +14,7 @@
 <head>
 
   <title>Sudoku - 9x9</title>
+  <script type="text/javascript" src="JPorras_AMontero_Sudoku-JS.js"></script>
   <link rel="stylesheet" href="JPorras_AMontero_Sudoku-CSS.css">
   <meta charset="UTF-8">
   <meta name="description" content="Juego de Sudoku de 9x9">
@@ -33,6 +34,7 @@
   <hr>
   <br>
 
+  <div id=instrucciones9x9>
   <p class="principal">Recuerde no dejar casillas vacías o escribir símbolos no
     permitidos antes de revisar su resultado. Los símbolos permitidos son dígitos
     del 1 al 9. Para ganar, los números del Sudoku no deben haberse repetido
@@ -42,8 +44,137 @@
   </p>
 
   <br>
+  <br>
 
-  <button class="iniciar">¡Iniciar el juego!</button>
+  <button class="iniciar" type="button" onclick="desplegar()">¡Iniciar el juego!</button>
+  </div>
+
+  <div class="sudoku" hidden> <!-- texto y sudokus en divs aparte -->
+
+  <br>
+  <br>
+  <br>
+
+  <table>
+    <tr>
+      <td><input type="number" size="1"></td>
+      <td><input type="number" size="1"></td>
+      <td><input type="number" size="1"></td>
+      <td><input type="number" size="1"></td>
+      <td><input type="number" size="1"></td>
+      <td><input type="number" size="1"></td>
+      <td><input type="number" size="1"></td>
+      <td><input type="number" size="1"></td>
+      <td><input type="number" size="1"></td>
+    </tr>
+
+    <tr>
+      <td><input type="number" size="1"></td>
+      <td><input type="number" size="1"></td>
+      <td><input type="number" size="1"></td>
+      <td><input type="number" size="1"></td>
+      <td><input type="number" size="1"></td>
+      <td><input type="number" size="1"></td>
+      <td><input type="number" size="1"></td>
+      <td><input type="number" size="1"></td>
+      <td><input type="number" size="1"></td>
+  </tr>
+
+  <tr>
+    <td><input type="number" size="1"></td>
+    <td><input type="number" size="1"></td>
+    <td><input type="number" size="1"></td>
+    <td><input type="number" size="1"></td>
+    <td><input type="number" size="1"></td>
+    <td><input type="number" size="1"></td>
+    <td><input type="number" size="1"></td>
+    <td><input type="number" size="1"></td>
+    <td><input type="number" size="1"></td>
+  </tr>
+
+  <tr>
+    <td><input type="number" size="1"></td>
+    <td><input type="number" size="1"></td>
+    <td><input type="number" size="1"></td>
+    <td><input type="number" size="1"></td>
+    <td><input type="number" size="1"></td>
+    <td><input type="number" size="1"></td>
+    <td><input type="number" size="1"></td>
+    <td><input type="number" size="1"></td>
+    <td><input type="number" size="1"></td>
+  </tr>
+
+  <tr>
+    <td><input type="number" size="1"></td>
+    <td><input type="number" size="1"></td>
+    <td><input type="number" size="1"></td>
+    <td><input type="number" size="1"></td>
+    <td><input type="number" size="1"></td>
+    <td><input type="number" size="1"></td>
+    <td><input type="number" size="1"></td>
+    <td><input type="number" size="1"></td>
+    <td><input type="number" size="1"></td>
+  </tr>
+
+  <tr>
+    <td><input type="number" size="1"></td>
+    <td><input type="number" size="1"></td>
+    <td><input type="number" size="1"></td>
+    <td><input type="number" size="1"></td>
+    <td><input type="number" size="1"></td>
+    <td><input type="number" size="1"></td>
+    <td><input type="number" size="1"></td>
+    <td><input type="number" size="1"></td>
+    <td><input type="number" size="1"></td>
+  </tr>
+
+  <tr>
+    <td><input type="number" size="1"></td>
+    <td><input type="number" size="1"></td>
+    <td><input type="number" size="1"></td>
+    <td><input type="number" size="1"></td>
+    <td><input type="number" size="1"></td>
+    <td><input type="number" size="1"></td>
+    <td><input type="number" size="1"></td>
+    <td><input type="number" size="1"></td>
+    <td><input type="number" size="1"></td>
+  </tr>
+
+  <tr>
+    <td><input type="number" size="1"></td>
+    <td><input type="number" size="1"></td>
+    <td><input type="number" size="1"></td>
+    <td><input type="number" size="1"></td>
+    <td><input type="number" size="1"></td>
+    <td><input type="number" size="1"></td>
+    <td><input type="number" size="1"></td>
+    <td><input type="number" size="1"></td>
+    <td><input type="number" size="1"></td>
+  </tr>
+
+  </tr>
+    <td><input type="number" size="1"></td>
+    <td><input type="number" size="1"></td>
+    <td><input type="number" size="1"></td>
+    <td><input type="number" size="1"></td>
+    <td><input type="number" size="1"></td>
+    <td><input type="number" size="1"></td>
+    <td><input type="number" size="1"></td>
+    <td><input type="number" size="1"></td>
+    <td><input type="number" size="1"></td>
+  </tr>
+  </table>
+
+  <br>
+  <br>
+
+  <button class="Revisar">Revisar su solución</button>
+
+  <br>
+  <br>
+
+  </div>
+
 </body>
 
 </html>

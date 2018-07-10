@@ -1,4 +1,4 @@
-<!--
+  <!--
     Universidad de Costa Rica
     Proyecto de Introducción a la Computación
     Jorge Isaac Porras Rojas
@@ -15,6 +15,7 @@
 
   <title>Sudoku - 4x4</title>
   <link rel="stylesheet" href="JPorras_AMontero_Sudoku-CSS.css">
+  <script type="text/javascript" src="JPorras_AMontero_Sudoku-JS.js"></script>
   <meta charset="UTF-8">
   <meta name="description" content="Juego de Sudoku de 4x4">
   <meta name="author" content="Jorge Isaac Porras Rojas", "Andrés Montero Bermúdez">
@@ -33,6 +34,7 @@
   <hr>
   <br>
 
+  <div id="instrucciones4x4">
   <p class="principal">Recuerde no dejar casillas vacías o escribir símbolos no
     permitidos antes de revisar su resultado. Los símbolos permitidos son dígitos
     del 1 al 4. Para ganar, los números del Sudoku no deben haberse repetido
@@ -42,8 +44,54 @@
   </p>
 
   <br>
+  <br>
 
-  <button class="iniciar">¡Iniciar el juego!</button>
+  <button class="iniciar" type="button" onclick="desplegar()">¡Iniciar el juego!</button>
+
+  </div>
+
+  <div class="sudoku" hidden> <!-- texto y sudokus en divs aparte -->
+
+    <br>
+    <br>
+    <br>
+
+    <table>
+    <tr>
+      <td><input type="number" value="3" size="1" disabled></td>
+      <td><input type="number" size="1"></td>
+      <td><input type="number" value="4" size="1" disabled></td>
+      <td><input type="number" size="1"></td>
+    </tr>
+    <tr>
+      <td><input type="number" size="1"></td>
+      <td><input type="number" value="1" size="1" disabled></td>
+      <td><input type="number" size="1"></td>
+      <td><input type="number" size="1"></td>
+    </tr>
+    <tr>
+      <td><input type="number" size="1"></td>
+      <td><input type="number" size="1"></td>
+      <td><input type="number" value="1" size="1" disabled></td>
+      <td><input type="number" size="1"></td>
+    </tr>
+    <tr>
+      <td><input type="number" value="1" size="1" disabled></td>
+      <td><input type="number" size="1"></td>
+      <td><input type="number" size="1"></td>
+      <td><input type="number" value="4" size="1" disabled></td>
+    </tr>
+  </table>
+
+  <br>
+  <br>
+
+  <button class="Revisar">Revisar su solución</button>
+
+  <br>
+  <br>
+
+</div>
 
 </body>
 
