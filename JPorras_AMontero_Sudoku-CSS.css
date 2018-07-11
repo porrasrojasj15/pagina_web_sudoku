@@ -127,3 +127,39 @@ tr{
 td{
   padding:0px;
 }
+
+td.bordeinferior{
+  padding-bottom: 4px;
+}
+
+td.bordesuperior{
+  padding-top: 4px;
+}
+
+td.bordeizquierdo{
+  padding-left: 4px;
+}
+
+td.bordederecho{
+  padding-right: 4px;
+}
+
+td.bordesupder{
+  padding-top: 4px;
+  padding-right: 4px;
+}
+
+td.bordesupizq{
+  padding-top: 4px;
+  padding-left: 4px;
+}
+
+td.bordeinfder{
+  padding-bottom: 4px;
+  padding-right: 4px;
+}
+
+td.bordeinfizq{
+  padding-bottom: 4px;
+  padding-left: 4px;
+}
